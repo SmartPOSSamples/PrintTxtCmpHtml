@@ -1,0 +1,76 @@
+----------------------------------------
+               SHOPPING RECEIPT
+           Welcome to the Shopping Mall
+----------------------------------------
+Item No.      Item Name        Quantity    Unit Price    Subtotal
+----------------------------------------
+001           Apple            2           $5.00         $10.00
+002           Banana           3           $3.00         $9.00
+003           Milk             1           $6.50         $6.50
+004           Bread            1           $4.00         $4.00
+005           Eggs             1           $10.00        $10.00
+006           Shampoo          2           $15.00        $30.00
+007           Body Wash        1           $12.00        $12.00
+008           Toilet Paper     1           $5.00         $5.00
+009           Snacks           3           $7.00         $21.00
+010           Napkins          2           $3.00         $6.00
+011           Frozen Dumplings 1           $18.00        $18.00
+012           Soy Sauce        1           $5.50         $5.50
+013           Cooking Oil      1           $22.00        $22.00
+014           Dish Soap        1           $8.00         $8.00
+015           Rags             2           $2.00         $4.00
+016           Noodles          2           $4.00         $8.00
+017           Cookies          2           $4.50         $9.00
+018           Toothpaste       1           $6.00         $6.00
+019           Toothbrush       1           $3.50         $3.50
+020           Batteries        1           $7.00         $7.00
+021           Laundry Powder   1           $16.00        $16.00
+022           Knife Set        1           $20.00        $20.00
+023           Spatula          1           $10.00        $10.00
+024           Plastic Bags     1           $1.00         $1.00
+025           Tea Leaves       1           $15.00        $15.00
+026           Soap             3           $2.00         $6.00
+027           Fruit Knife      1           $8.00         $8.00
+028           Dinnerware       1           $20.00        $20.00
+029           Coffee           1           $25.00        $25.00
+030           Bottled Water    6           $1.50         $9.00
+031           Tissue Paper     1           $4.50         $4.50
+032           Laundry Liquid   1           $14.00        $14.00
+033           Calendar         1           $3.00         $3.00
+034           Plastic Wrap     1           $5.00         $5.00
+035           Chicken Breast   2           $18.00        $36.00
+036           Potato Chips     2           $6.00         $12.00
+037           Beef Jerky       1           $25.00        $25.00
+038           Salad            1           $10.00        $10.00
+039           Hair Conditioner 1           $12.00        $12.00
+040           Chewing Gum      2           $1.50         $3.00
+041           Oranges          4           $4.00         $16.00
+042           Watermelon       1           $12.00        $12.00
+043           Tape             1           $3.00         $3.00
+044           Dried Fruit      2           $15.00        $30.00
+045           Goji Berries     1           $30.00        $30.00
+046           Apple Cider      1           $18.00        $18.00
+047           Yogurt           3           $5.50         $16.50
+048           Supplements      1           $28.00        $28.00
+049           Spices           1           $7.00         $7.00
+050           Ice Cream        2           $10.00        $20.00
+051           Hair Gel         1           $12.00        $12.00
+052           Coffee Beans     1           $28.00        $28.00
+053           Chocolate        1           $15.00        $15.00
+054           Wine             1           $50.00        $50.00
+055           Beer             6           $4.50         $27.00
+056           Fruit Juice      1           $6.00         $6.00
+057           Sauce            1           $8.00         $8.00
+058           Red Wine         1           $80.00        $80.00
+059           Oats             1           $12.00        $12.00
+060           Cereal           1           $8.00         $8.00
+----------------------------------------
+Subtotal                                        $846.00
+----------------------------------------
+Tax (5%)                                        $42.30
+----------------------------------------
+Total                                           $888.30
+----------------------------------------
+Payment Method: Alipay
+Thank you for shopping with us!
+----------------------------------------

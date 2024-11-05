@@ -1,0 +1,135 @@
+----------------------------------------
+               SHOPPING RECEIPT
+           Welcome to the Shopping Mall
+----------------------------------------
+Item No.      Item Name        Quantity    Unit Price    Subtotal
+----------------------------------------
+001           Apple            2           $5.00         $10.00
+002           Banana           3           $3.00         $9.00
+003           Milk             1           $6.50         $6.50
+004           Bread            1           $4.00         $4.00
+005           Eggs             1           $10.00        $10.00
+006           Shampoo          2           $15.00        $30.00
+007           Body Wash        1           $12.00        $12.00
+008           Toilet Paper     1           $5.00         $5.00
+009           Snacks           3           $7.00         $21.00
+010           Napkins          2           $3.00         $6.00
+011           Frozen Dumplings 1           $18.00        $18.00
+012           Soy Sauce        1           $5.50         $5.50
+013           Cooking Oil      1           $22.00        $22.00
+014           Dish Soap        1           $8.00         $8.00
+015           Rags             2           $2.00         $4.00
+016           Noodles          2           $4.00         $8.00
+017           Cookies          2           $4.50         $9.00
+018           Toothpaste       1           $6.00         $6.00
+019           Toothbrush       1           $3.50         $3.50
+020           Batteries        1           $7.00         $7.00
+021           Laundry Powder   1           $16.00        $16.00
+022           Knife Set        1           $20.00        $20.00
+023           Spatula          1           $10.00        $10.00
+024           Plastic Bags     1           $1.00         $1.00
+025           Tea Leaves       1           $15.00        $15.00
+026           Soap             3           $2.00         $6.00
+027           Fruit Knife      1           $8.00         $8.00
+028           Dinnerware       1           $20.00        $20.00
+029           Coffee           1           $25.00        $25.00
+030           Bottled Water    6           $1.50         $9.00
+031           Tissue Paper     1           $4.50         $4.50
+032           Laundry Liquid   1           $14.00        $14.00
+033           Calendar         1           $3.00         $3.00
+034           Plastic Wrap     1           $5.00         $5.00
+035           Chicken Breast   2           $18.00        $36.00
+036           Potato Chips     2           $6.00         $12.00
+037           Beef Jerky       1           $25.00        $25.00
+038           Salad            1           $10.00        $10.00
+039           Hair Conditioner 1           $12.00        $12.00
+040           Chewing Gum      2           $1.50         $3.00
+041           Oranges          4           $4.00         $16.00
+042           Watermelon       1           $12.00        $12.00
+043           Tape             1           $3.00         $3.00
+044           Dried Fruit      2           $15.00        $30.00
+045           Goji Berries     1           $30.00        $30.00
+046           Apple Cider      1           $18.00        $18.00
+047           Yogurt           3           $5.50         $16.50
+048           Supplements      1           $28.00        $28.00
+049           Spices           1           $7.00         $7.00
+050           Ice Cream        2           $10.00        $20.00
+051           Hair Gel         1           $12.00        $12.00
+052           Coffee Beans     1           $28.00        $28.00
+053           Chocolate        1           $15.00        $15.00
+054           Wine             1           $50.00        $50.00
+055           Beer             6           $4.50         $27.00
+056           Fruit Juice      1           $6.00         $6.00
+057           Sauce            1           $8.00         $8.00
+058           Red Wine         1           $80.00        $80.00
+059           Oats             1           $12.00        $12.00
+060           Cereal           1           $8.00         $8.00
+061           Ice Packs        2           $4.00         $8.00
+062           Rice             1           $10.00        $10.00
+063           Tea              1           $7.50         $7.50
+064           Biscuits         2           $3.50         $7.00
+065           Ketchup          1           $4.00         $4.00
+066           Mustard          1           $2.50         $2.50
+067           Olive Oil        1           $18.00        $18.00
+068           Salt             1           $1.50         $1.50
+069           Pepper           1           $2.00         $2.00
+070           Napkin Holder    1           $5.00         $5.00
+071           Toothpick        1           $2.00         $2.00
+072           Paper Plates     1           $3.00         $3.00
+073           Paper Cups       1           $2.50         $2.50
+074           Tissues          2           $4.00         $8.00
+075           Garlic           1           $1.50         $1.50
+076           Ginger           1           $2.00         $2.00
+077           Onions           1           $3.00         $3.00
+078           Potatoes         1           $4.00         $4.00
+079           Tomatoes         1           $5.00         $5.00
+080           Lettuce          1           $2.50         $2.50
+081           Avocados         2           $3.00         $6.00
+082           Cucumbers        1           $2.00         $2.00
+083           Carrots          1           $3.50         $3.50
+084           Celery           1           $2.50         $2.50
+085           Broccoli         1           $3.00         $3.00
+086           Spinach          1           $3.00         $3.00
+087           Cauliflower      1           $4.00         $4.00
+088           Asparagus        1           $5.00         $5.00
+089           Mushrooms        1           $4.00         $4.00
+090           Zucchini         1           $2.50         $2.50
+091           Bell Peppers     1           $3.00         $3.00
+092           Sweet Potatoes   1           $4.50         $4.50
+093           Squash           1           $4.00         $4.00
+094           Pumpkin          1           $5.00         $5.00
+095           Eggplant         1           $4.00         $4.00
+096           Butter           1           $6.00         $6.00
+097           Cheese           1           $7.00         $7.00
+098           Yogurt           2           $3.00         $6.00
+099           Cream            1           $3.50         $3.50
+100           Milk Powder      1           $10.00        $10.00
+101           Cornflakes       1           $4.00         $4.00
+102           Oatmeal          1           $3.50         $3.50
+103           Spaghetti        1           $2.00         $2.00
+104           Pasta Sauce      1           $5.00         $5.00
+105           Pizza Base       1           $4.00         $4.00
+106           Pesto Sauce      1           $6.00         $6.00
+107           Parmesan         1           $8.00         $8.00
+108           Garlic Bread     1           $5.00         $5.00
+109           Frozen Pizza     1           $7.00         $7.00
+110           Lasagna          1           $8.00         $8.00
+111           Canned Soup      3           $2.50         $7.50
+112           Canned Beans     2           $1.50         $3.00
+113           Canned Corn      2           $2.00         $4.00
+114           Canned Tuna      3           $2.50         $7.50
+115           Frozen Vegetables2           $3.00         $6.00
+116           Frozen Fries     1           $4.00         $4.00
+117           Frozen Chicken   1           $10.00        $10.00
+118           Frozen Fish      1           $8.00         $8.00
+119           Frozen Hamburgers1           $6.00         $6.00
+120           Frozen Pies      1           $5.50         $5.50
+----------------------------------------
+Subtotal:                                       $926.50
+Tax (5%):                                       $46.33
+----------------------------------------
+Total:                                          $972.83
+----------------------------------------
+Payment Method: Alipay
+Thank you for shopping with us!
+----------------------------------------
