@@ -6,156 +6,638 @@
     <title>Shopping Receipt</title>
     <style>
         body {
-            font-family: monospace;
-            font-size: 21px;
+            font-family: DFKai-sb;
+            font-size: 24px;
             margin: 0;
             padding: 0;
-        }
 
-        pre {
-            margin: 0;
-            padding: 0;
-            font-size: 21px;
+        }
+        th, td{
+        	height: 31.0px;
+        	cellspacing: 0px;
+        	letter-spacing: -0.5px;
+        }
+        .space{
+            font-weight: 400;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
-<p>----------------------------------------</p>
-<p>SHOPPING RECEIPT</p>
-<p>Welcome to the Shopping Mall</p>
-<p>----------------------------------------</p>
-<p>Item No.      Item Name        Quantity    Unit Price    Subtotal</p>
-<p>----------------------------------------</p>
-<p>001           Apple            2           $5.00         $10.00</p>
-<p>002           Banana           3           $3.00         $9.00</p>
-<p>003           Milk             1           $6.50         $6.50</p>
-<p>004           Bread            1           $4.00         $4.00</p>
-<p>005           Eggs             1           $10.00        $10.00</p>
-<p>006           Shampoo          2           $15.00        $30.00</p>
-<p>007           Body Wash        1           $12.00        $12.00</p>
-<p>008           Toilet Paper     1           $5.00         $5.00</p>
-<p>009           Snacks           3           $7.00         $21.00</p>
-<p>010           Napkins          2           $3.00         $6.00</p>
-<p>011           Frozen Dumplings 1           $18.00        $18.00</p>
-<p>012           Soy Sauce        1           $5.50         $5.50</p>
-<p>013           Cooking Oil      1           $22.00        $22.00</p>
-<p>014           Dish Soap        1           $8.00         $8.00</p>
-<p>015           Rags             2           $2.00         $4.00</p>
-<p>016           Noodles          2           $4.00         $8.00</p>
-<p>017           Cookies          2           $4.50         $9.00</p>
-<p>018           Toothpaste       1           $6.00         $6.00</p>
-<p>019           Toothbrush       1           $3.50         $3.50</p>
-<p>020           Batteries        1           $7.00         $7.00</p>
-<p>021           Laundry Powder   1           $16.00        $16.00</p>
-<p>022           Knife Set        1           $20.00        $20.00</p>
-<p>023           Spatula          1           $10.00        $10.00</p>
-<p>024           Plastic Bags     1           $1.00         $1.00</p>
-<p>025           Tea Leaves       1           $15.00        $15.00</p>
-<p>026           Soap             3           $2.00         $6.00</p>
-<p>027           Fruit Knife      1           $8.00         $8.00</p>
-<p>028           Dinnerware       1           $20.00        $20.00</p>
-<p>029           Coffee           1           $25.00        $25.00</p>
-<p>030           Bottled Water    6           $1.50         $9.00</p>
-<p>031           Tissue Paper     1           $4.50         $4.50</p>
-<p>032           Laundry Liquid   1           $14.00        $14.00</p>
-<p>033           Calendar         1           $3.00         $3.00</p>
-<p>034           Plastic Wrap     1           $5.00         $5.00</p>
-<p>035           Chicken Breast   2           $18.00        $36.00</p>
-<p>036           Potato Chips     2           $6.00         $12.00</p>
-<p>037           Beef Jerky       1           $25.00        $25.00</p>
-<p>038           Salad            1           $10.00        $10.00</p>
-<p>039           Hair Conditioner 1           $12.00        $12.00</p>
-<p>040           Chewing Gum      2           $1.50         $3.00</p>
-<p>041           Oranges          4           $4.00         $16.00</p>
-<p>042           Watermelon       1           $12.00        $12.00</p>
-<p>043           Tape             1           $3.00         $3.00</p>
-<p>044           Dried Fruit      2           $15.00        $30.00</p>
-<p>045           Goji Berries     1           $30.00        $30.00</p>
-<p>046           Apple Cider      1           $18.00        $18.00</p>
-<p>047           Yogurt           3           $5.50         $16.50</p>
-<p>048           Supplements      1           $28.00        $28.00</p>
-<p>049           Spices           1           $7.00         $7.00</p>
-<p>050           Ice Cream        2           $10.00        $20.00</p>
-<p>051           Hair Gel         1           $12.00        $12.00</p>
-<p>052           Coffee Beans     1           $28.00        $28.00</p>
-<p>053           Chocolate        1           $15.00        $15.00</p>
-<p>054           Wine             1           $50.00        $50.00</p>
-<p>055           Beer             6           $4.50         $27.00</p>
-<p>056           Fruit Juice      1           $6.00         $6.00</p>
-<p>057           Sauce            1           $8.00         $8.00</p>
-<p>058           Red Wine         1           $80.00        $80.00</p>
-<p>059           Oats             1           $12.00        $12.00</p>
-<p>060           Cereal           1           $8.00         $8.00</p>
-<p>061           Lettuce          2           $2.50         $5.00</p>
-<p>062           Corn             3           $1.80         $5.40</p>
-<p>063           Carrot           4           $1.20         $4.80</p>
-<p>064           Celery           2           $2.00         $4.00</p>
-<p>065           Spinach          1           $3.50         $3.50</p>
-<p>066           Zucchini         2           $3.00         $6.00</p>
-<p>067           Broccoli         1           $2.80         $2.80</p>
-<p>068           Kale             1           $4.00         $4.00</p>
-<p>069           Mushrooms        1           $3.00         $3.00</p>
-<p>070           Cabbage          1           $2.50         $2.50</p>
-<p>071           Potatoes         3           $2.00         $6.00</p>
-<p>072           Sweet Potato     2           $2.20         $4.40</p>
-<p>073           Garlic           2           $1.50         $3.00</p>
-<p>074           Onion            3           $1.20         $3.60</p>
-<p>075           Bell Pepper      2           $2.50         $5.00</p>
-<p>076           Avocado          2           $2.80         $5.60</p>
-<p>077           Tomato           4           $2.00         $8.00</p>
-<p>078           Pomegranate      1           $4.00         $4.00</p>
-<p>079           Papaya           1           $5.00         $5.00</p>
-<p>080           Lychee           1           $6.00         $6.00</p>
-<p>081           Grapes           2           $4.50         $9.00</p>
-<p>082           Pears            3           $3.00         $9.00</p>
-<p>083           Apples           4           $2.50         $10.00</p>
-<p>084           Pineapple        1           $4.00         $4.00</p>
-<p>085           Mango            2           $3.50         $7.00</p>
-<p>086           Paprika          1           $2.50         $2.50</p>
-<p>087           Cumin            1           $3.00         $3.00</p>
-<p>088           Salt             1           $1.50         $1.50</p>
-<p>089           Pepper           1           $1.80         $1.80</p>
-<p>090           Chili Powder     1           $2.00         $2.00</p>
-<p>091           Thyme            1           $2.00         $2.00</p>
-<p>092           Rosemary         1           $2.50         $2.50</p>
-<p>093           Basil            1           $2.00         $2.00</p>
-<p>094           Oregano          1           $2.50         $2.50</p>
-<p>095           Tarragon          1           $3.00         $3.00</p>
-<p>096           Ginger           1           $3.50         $3.50</p>
-<p>097           Cinnamon         1           $2.50         $2.50</p>
-<p>098           Nutmeg           1           $3.00         $3.00</p>
-<p>099           Vanilla Extract  1           $5.00         $5.00</p>
-<p>100           Baking Soda      1           $1.00         $1.00</p>
-<p>101           Baking Powder    1           $1.20         $1.20</p>
-<p>102           All-Purpose Flour 1           $2.50         $2.50</p>
-<p>103           Sugar            1           $2.00         $2.00</p>
-<p>104           Brown Sugar      1           $2.50         $2.50</p>
-<p>105           Honey            1           $4.00         $4.00</p>
-<p>106           Maple Syrup      1           $6.00         $6.00</p>
-<p>107           Cornstarch       1           $1.50         $1.50</p>
-<p>108           Cornmeal         1           $2.00         $2.00</p>
-<p>109           Coconut Oil      1           $5.00         $5.00</p>
-<p>110           Olive Oil        1           $6.50         $6.50</p>
-<p>111           Vinegar          1           $3.00         $3.00</p>
-<p>112           Soy Sauce        1           $2.50         $2.50</p>
-<p>113           Worcestershire Sauce 1       $3.00         $3.00</p>
-<p>114           Mustard          1           $2.00         $2.00</p>
-<p>115           Ketchup          1           $2.00         $2.00</p>
-<p>116           Mayonnaise       1           $3.00         $3.00</p>
-<p>117           Salad Dressing   1           $4.00         $4.00</p>
-<p>118           Hot Sauce        1           $2.50         $2.50</p>
-<p>119           BBQ Sauce        1           $3.00         $3.00</p>
-<p>120           Fish Sauce       1           $4.00         $4.00</p>
-<p>----------------------------------------</p>
-<p>Subtotal                                        $1109.30</p>
-<p>----------------------------------------</p>
-<p>Tax (5%)                                        $55.47</p>
-<p>----------------------------------------</p>
-<p>Total                                           $1164.77</p>
-<p>----------------------------------------</p>
-<p>Payment Method: Credit Card</p>
-<p>Thank you for shopping with us!</p>
-<p>----------------------------------------</p>
+
+<table border = "0" cellspacing="5" style="font-size: 24px;font-family:DFKai-sb;text-align:left;" width="384">
+    <tbody>
+    <tr>
+        <td class="space" colspan="5">-----------------------------</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="font-size: 24px;font-family:DFKai-sb;text-align:center">SHOPPING RECEIPT</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="font-size: 24px;font-family:DFKai-sb;text-align:center">Welcome to the Shopping Mall</td>
+    </tr>
+    <tr>
+        <td class="space" colspan="5">-----------------------------</td>
+    </tr>
+    <tr>
+        <td colspan="5">Item No.  Item Name   Quantity  Unit Price Subtotal</td>
+    </tr>
+    <tr>
+        <td class="space" colspan="5">-----------------------------</td>
+    </tr>
+    <tr>
+        <td>001</td>
+        <td>Apple</td>
+        <td>2</td>
+        <td>$5.00</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>002</td>
+        <td>Banana</td>
+        <td>3</td>
+        <td>$3.00</td>
+        <td>$9.00</td>
+    </tr>
+    <tr>
+        <td>003</td>
+        <td>Milk</td>
+        <td>1</td>
+        <td>$6.50</td>
+        <td>$6.50</td>
+    </tr>
+    <tr>
+        <td>004</td>
+        <td>Bread</td>
+        <td>1</td>
+        <td>$4.00</td>
+        <td>$4.00</td>
+    </tr>
+    <tr>
+        <td>005</td>
+        <td>Eggs</td>
+        <td>1</td>
+        <td>$10.00</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>006</td>
+        <td>Shampoo</td>
+        <td>2</td>
+        <td>$15.00</td>
+        <td>$30.00</td>
+    </tr>
+    <tr>
+        <td>007</td>
+        <td>Body Wash</td>
+        <td>1</td>
+        <td>$12.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>008</td>
+        <td>Toilet Paper</td>
+        <td>1</td>
+        <td>$5.00</td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td>009</td>
+        <td>Snacks</td>
+        <td>3</td>
+        <td>$7.00</td>
+        <td>$21.00</td>
+    </tr>
+    <tr>
+        <td>010</td>
+        <td>Napkins</td>
+        <td>2</td>
+        <td>$3.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr>
+        <td  width= 5%>011</td>
+        <td width= 90%>FrozenDumpling</td>
+        <td  width= 1%>1</td>
+        <td  width= 2%>$18.00</td>
+        <td  width= 2%>$18.00</td>
+    </tr>
+    <tr>
+        <td>012</td>
+        <td>Soy Sauce</td>
+        <td>1</td>
+        <td>$5.50</td>
+        <td>$5.50</td>
+    </tr>
+    <tr>
+        <td>013</td>
+        <td>Cooking Oil</td>
+        <td>1</td>
+        <td>$22.00</td>
+        <td>$22.00</td>
+    </tr>
+    <tr>
+        <td>014</td>
+        <td>Dish Soap</td>
+        <td>1</td>
+        <td>$8.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>015</td>
+        <td>Rags</td>
+        <td>2</td>
+        <td>$2.00</td>
+        <td>$4.00</td>
+    </tr>
+    <tr>
+        <td>016</td>
+        <td>Noodles</td>
+        <td>2</td>
+        <td>$4.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>017</td>
+        <td>Cookies</td>
+        <td>2</td>
+        <td>$4.50</td>
+        <td>$9.00</td>
+    </tr>
+    <tr>
+        <td>018</td>
+        <td>Toothpaste</td>
+        <td>1</td>
+        <td>$6.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr>
+        <td>019</td>
+        <td>Toothbrush</td>
+        <td>1</td>
+        <td>$3.50</td>
+        <td>$3.50</td>
+    </tr>
+    <tr>
+        <td>020</td>
+        <td>Batteries</td>
+        <td>1</td>
+        <td>$7.00</td>
+        <td>$7.00</td>
+    </tr>
+    <tr>
+        <td>021</td>
+        <td>Laundry Powder</td>
+        <td>1</td>
+        <td>$16.00</td>
+        <td>$16.00</td>
+    </tr>
+    <tr>
+        <td>022</td>
+        <td>Knife Set</td>
+        <td>1</td>
+        <td>$20.00</td>
+        <td>$20.00</td>
+    </tr>
+    <tr>
+        <td>023</td>
+        <td>Spatula</td>
+        <td>1</td>
+        <td>$10.00</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>024</td>
+        <td>Plastic Bags</td>
+        <td>1</td>
+        <td>$1.00</td>
+        <td>$1.00</td>
+    </tr>
+    <tr>
+        <td>025</td>
+        <td>Tea Leaves</td>
+        <td>1</td>
+        <td>$15.00</td>
+        <td>$15.00</td>
+    </tr>
+    <tr>
+        <td>026</td>
+        <td>Soap</td>
+        <td>3</td>
+        <td>$2.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr>
+        <td>027</td>
+        <td>Fruit Knife</td>
+        <td>1</td>
+        <td>$8.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>028</td>
+        <td>Dinnerware</td>
+        <td>1</td>
+        <td>$20.00</td>
+        <td>$20.00</td>
+    </tr>
+    <tr>
+        <td>029</td>
+        <td>Coffee</td>
+        <td>1</td>
+        <td>$25.00</td>
+        <td>$25.00</td>
+    </tr>
+    <tr>
+        <td>030</td>
+        <td>Bottled Water</td>
+        <td>6</td>
+        <td>$1.50</td>
+        <td>$9.00</td>
+    </tr>
+    <tr>
+        <td>031</td>
+        <td>Tissue Paper</td>
+        <td>1</td>
+        <td>$4.50</td>
+        <td>$4.50</td>
+    </tr>
+    <tr>
+        <td>032</td>
+        <td>Laundry Liquid</td>
+        <td>1</td>
+        <td>$14.00</td>
+        <td>$14.00</td>
+    </tr>
+    <tr>
+        <td>033</td>
+        <td>Calendar</td>
+        <td>1</td>
+        <td>$3.00</td>
+        <td>$3.00</td>
+    </tr>
+    <tr>
+        <td>034</td>
+        <td>Plastic Wrap</td>
+        <td>1</td>
+        <td>$5.00</td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td>035</td>
+        <td>Chicken Breast</td>
+        <td>2</td>
+        <td>$18.00</td>
+        <td>$36.00</td>
+    </tr>
+    <tr>
+        <td>036</td>
+        <td>Potato Chips</td>
+        <td>2</td>
+        <td>$6.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>037</td>
+        <td>Beef Jerky</td>
+        <td>1</td>
+        <td>$25.00</td>
+        <td>$25.00</td>
+    </tr>
+    <tr>
+        <td>038</td>
+        <td>Salad</td>
+        <td>1</td>
+        <td>$10.00</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>039</td>
+        <td>Hair Conditioner</td>
+        <td>1</td>
+        <td>$12.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>040</td>
+        <td>Chewing Gum</td>
+        <td>2</td>
+        <td>$1.50</td>
+        <td>$3.00</td>
+    </tr>
+    <tr>
+        <td>041</td>
+        <td>Oranges</td>
+        <td>4</td>
+        <td>$4.00</td>
+        <td>$16.00</td>
+    </tr>
+    <tr>
+        <td>042</td>
+        <td>Watermelon</td>
+        <td>1</td>
+        <td>$12.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>043</td>
+        <td>Tape</td>
+        <td>1</td>
+        <td>$3.00</td>
+        <td>$3.00</td>
+    </tr>
+    <tr>
+        <td>044</td>
+        <td>Dried Fruit</td>
+        <td>2</td>
+        <td>$15.00</td>
+        <td>$30.00</td>
+    </tr>
+    <tr>
+        <td>045</td>
+        <td>Goji Berries</td>
+        <td>1</td>
+        <td>$30.00</td>
+        <td>$30.00</td>
+    </tr>
+    <tr>
+        <td>046</td>
+        <td>Apple Cider</td>
+        <td>1</td>
+        <td>$18.00</td>
+        <td>$18.00</td>
+    </tr>
+    <tr>
+        <td>047</td>
+        <td>Yogurt</td>
+        <td>3</td>
+        <td>$5.50</td>
+        <td>$16.50</td>
+    </tr>
+    <tr>
+        <td>048</td>
+        <td>Supplements</td>
+        <td>1</td>
+        <td>$28.00</td>
+        <td>$28.00</td>
+    </tr>
+    <tr>
+        <td>049</td>
+        <td>Spices</td>
+        <td>1</td>
+        <td>$7.00</td>
+        <td>$7.00</td>
+    </tr>
+    <tr>
+        <td>050</td>
+        <td>Ice Cream</td>
+        <td>2</td>
+        <td>$10.00</td>
+        <td>$20.00</td>
+    </tr>
+    <tr>
+        <td>051</td>
+        <td>Hair Gel</td>
+        <td>1</td>
+        <td>$12.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>052</td>
+        <td>Coffee Beans</td>
+        <td>1</td>
+        <td>$28.00</td>
+        <td>$28.00</td>
+    </tr>
+    <tr>
+        <td>053</td>
+        <td>Chocolate</td>
+        <td>1</td>
+        <td>$15.00</td>
+        <td>$15.00</td>
+    </tr>
+    <tr>
+        <td>054</td>
+        <td>Wine</td>
+        <td>1</td>
+        <td>$50.00</td>
+        <td>$50.00</td>
+    </tr>
+    <tr>
+        <td>055</td>
+        <td>Beer</td>
+        <td>6</td>
+        <td>$4.50</td>
+        <td>$27.00</td>
+    </tr>
+    <tr>
+        <td>056</td>
+        <td>Fruit Juice</td>
+        <td>1</td>
+        <td>$6.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr>
+        <td>057</td>
+        <td>Sauce</td>
+        <td>1</td>
+        <td>$8.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>058</td>
+        <td>Red Wine</td>
+        <td>1</td>
+        <td>$80.00</td>
+        <td>$80.00</td>
+    </tr>
+    <tr>
+        <td>059</td>
+        <td>Oats</td>
+        <td>1</td>
+        <td>$12.00</td>
+        <td>$12.00</td>
+    </tr>
+    <tr>
+        <td>060</td>
+        <td>Cereal</td>
+        <td>1</td>
+        <td>$8.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>061</td>
+        <td>Ice Packs</td>
+        <td>2</td>
+        <td>$4.00</td>
+        <td>$8.00</td>
+    </tr>
+    <tr>
+        <td>062</td>
+        <td>Rice</td>
+        <td>1</td>
+        <td>$10.00</td>
+        <td>$10.00</td>
+    </tr>
+    <tr>
+        <td>063</td>
+        <td>Tea</td>
+        <td>1</td>
+        <td>$7.50</td>
+        <td>$7.50</td>
+    </tr>
+    <tr>
+        <td>064</td>
+        <td>Biscuits</td>
+        <td>2</td>
+        <td>$3.50</td>
+        <td>$7.00</td>
+    </tr>
+    <tr>
+        <td>065</td>
+        <td>Ketchup</td>
+        <td>1</td>
+        <td>$4.00</td>
+        <td>$4.00</td>
+    </tr>
+    <tr>
+        <td>066</td>
+        <td>Mustard</td>
+        <td>1</td>
+        <td>$2.50</td>
+        <td>$2.50</td>
+    </tr>
+    <tr>
+        <td>067</td>
+        <td>Olive Oil</td>
+        <td>1</td>
+        <td>$18.00</td>
+        <td>$18.00</td>
+    </tr>
+    <tr>
+        <td>068</td>
+        <td>Salt</td>
+        <td>1</td>
+        <td>$1.50</td>
+        <td>$1.50</td>
+    </tr>
+    <tr>
+        <td>069</td>
+        <td>Pepper</td>
+        <td>1</td>
+        <td>$2.00</td>
+        <td>$2.00</td>
+    </tr>
+    <tr>
+        <td>070</td>
+        <td>Napkin Holder</td>
+        <td>1</td>
+        <td>$5.00</td>
+        <td>$5.00</td>
+    </tr>
+    <tr>
+        <td>071</td>
+        <td>Toothpick</td>
+        <td>1</td>
+        <td>$2.00</td>
+        <td>$2.00</td>
+    </tr>
+    <tr>
+        <td>072</td>
+        <td>Paper Plates</td>
+        <td>1</td>
+        <td>$3.00</td>
+        <td>$3.00</td>
+    </tr>
+    <tr><td>073</td><td>Paper Cups</td><td>1</td><td>$2.50</td><td>$2.50</td></tr>
+    <tr><td>074</td><td>Tissues</td><td>2</td><td>$4.00</td><td>$8.00</td></tr>
+    <tr><td>075</td><td>Garlic</td><td>1</td><td>$1.50</td><td>$1.50</td></tr>
+    <tr><td>076</td><td>Ginger</td><td>1</td><td>$2.00</td><td>$2.00</td></tr>
+    <tr><td>077</td><td>Onions</td><td>1</td><td>$3.00</td><td>$3.00</td></tr>
+    <tr><td>078</td><td>Potatoes</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>079</td><td>Tomatoes</td><td>1</td><td>$5.00</td><td>$5.00</td></tr>
+    <tr><td>080</td><td>Lettuce</td><td>1</td><td>$2.50</td><td>$2.50</td></tr>
+    <tr><td>081</td><td>Avocados</td><td>2</td><td>$3.00</td><td>$6.00</td></tr>
+    <tr><td>082</td><td>Cucumbers</td><td>1</td><td>$2.00</td><td>$2.00</td></tr>
+    <tr><td>083</td><td>Carrots</td><td>1</td><td>$3.50</td><td>$3.50</td></tr>
+    <tr><td>084</td><td>Celery</td><td>1</td><td>$2.50</td><td>$2.50</td></tr>
+    <tr><td>085</td><td>Broccoli</td><td>1</td><td>$3.00</td><td>$3.00</td></tr>
+    <tr><td>086</td><td>Spinach</td><td>1</td><td>$3.00</td><td>$3.00</td></tr>
+    <tr><td>087</td><td>Cauliflower</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>088</td><td>Asparagus</td><td>1</td><td>$5.00</td><td>$5.00</td></tr>
+    <tr><td>089</td><td>Mushrooms</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>090</td><td>Zucchini</td><td>1</td><td>$2.50</td><td>$2.50</td></tr>
+    <tr><td>091</td><td>Bell Peppers</td><td>1</td><td>$3.00</td><td>$3.00</td></tr>
+    <tr>
+        <td>092</td>
+        <td>Sweet Potatoes</td>
+        <td>1</td>
+        <td>$4.50</td>
+        <td>$4.50</td>
+    </tr>
+    <tr><td>093</td><td>Squash</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>094</td><td>Pumpkin</td><td>1</td><td>$5.00</td><td>$5.00</td></tr>
+    <tr><td>095</td><td>Eggplant</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>096</td><td>Butter</td><td>1</td><td>$6.00</td><td>$6.00</td></tr>
+    <tr><td>097</td><td>Cheese</td><td>1</td><td>$7.00</td><td>$7.00</td></tr>
+    <tr><td>098</td><td>Yogurt</td><td>2</td><td>$3.00</td><td>$6.00</td></tr>
+    <tr><td>099</td><td>Cream</td><td>1</td><td>$3.50</td><td>$3.50</td></tr>
+    <tr><td>100</td><td>Milk Powder</td><td>1</td><td>$10.00</td><td>$10.00</td></tr>
+    <tr><td>101</td><td>Cornflakes</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>102</td><td>Oatmeal</td><td>1</td><td>$3.50</td><td>$3.50</td></tr>
+    <tr><td>103</td><td>Spaghetti</td><td>1</td><td>$2.00</td><td>$2.00</td></tr>
+    <tr><td>104</td><td>Pasta Sauce</td><td>1</td><td>$5.00</td><td>$5.00</td></tr>
+    <tr><td>105</td><td>Pizza Base</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>106</td><td>Pesto Sauce</td><td>1</td><td>$6.00</td><td>$6.00</td></tr>
+    <tr><td>107</td><td>Parmesan</td><td>1</td><td>$8.00</td><td>$8.00</td></tr>
+    <tr><td>108</td><td>Garlic Bread</td><td>1</td><td>$5.00</td><td>$5.00</td></tr>
+    <tr><td>109</td><td>Frozen Pizza</td><td>1</td><td>$7.00</td><td>$7.00</td></tr>
+    <tr><td>110</td><td>Lasagna</td><td>1</td><td>$8.00</td><td>$8.00</td></tr>
+    <tr><td>111</td><td>Canned Soup</td><td>3</td><td>$2.50</td><td>$7.50</td></tr>
+    <tr><td>112</td><td>Canned Beans</td><td>2</td><td>$1.50</td><td>$3.00</td></tr>
+    <tr><td>113</td><td>Canned Corn</td><td>2</td><td>$2.00</td><td>$4.00</td></tr>
+    <tr><td>114</td><td>Canned Tuna</td><td>3</td><td>$2.50</td><td>$7.50</td></tr>
+    <tr>
+        <td>115</td>
+        <td>Frozen Salad</td>
+        <td>2</td>
+        <td>$3.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr><td>116</td><td>Frozen Fries</td><td>1</td><td>$4.00</td><td>$4.00</td></tr>
+    <tr><td>117</td><td>Frozen Chicken</td><td>1</td><td>$10.00</td><td>$10.00</td></tr>
+    <tr><td>118</td><td>Frozen Fish</td><td>1</td><td>$8.00</td><td>$8.00</td></tr>
+    <tr>
+        <td>119</td>
+        <td>Frozen Pizza</td>
+        <td>1</td>
+        <td>$6.00</td>
+        <td>$6.00</td>
+    </tr>
+    <tr><td>120</td><td>Frozen Pies</td><td>1</td><td>$5.50</td><td>$5.50</td></tr>
+    <tr>
+        <td class="space" colspan="5">----------------------------------------</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="white-space: pre;">Subtotal      $926.50</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="white-space: pre;">Tax (5%)      $46.33</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="white-space: pre;">Total         $972.83</td>
+    </tr>
+    <tr>
+        <td class="space" colspan="5">----------------------------------------</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="white-space: pre;">Payment Method: Alipay</td>
+    </tr>
+    <tr>
+        <td colspan="5" style="white-space: pre;">Thank you for shopping with us!</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
 

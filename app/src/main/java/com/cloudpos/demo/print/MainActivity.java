@@ -1,9 +1,6 @@
 package com.cloudpos.demo.print;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,15 +16,11 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cloudpos.demo.print.util.HtmlFileUtils;
 
 import java.io.IOException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private WebView webView;
@@ -36,9 +29,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Handler handler;
     private Handler mHandler;
     private HandleCallBack callBack;
-    private PrinterModel printer;
     private static long lines;
-    private ExecutorService threadPool;
+    private PrinterModel printer;
+    Button textBtn1, textBtn2, htmlBtn1, htmlBtn2;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -46,10 +39,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         this.getWindow().setType(WindowManager.LayoutParams.TYPE_KEYGUARD_DIALOG);
         setContentView(R.layout.activity_main);
-        Button textBtn1 = findViewById(R.id.printText1);
-        Button textBtn2 = findViewById(R.id.printText2);
-        Button htmlBtn1 = findViewById(R.id.printHtml1);
-        Button htmlBtn2 = findViewById(R.id.printHtml2);
+        textBtn1 = findViewById(R.id.printText1);
+        textBtn2 = findViewById(R.id.printText2);
+        htmlBtn1 = findViewById(R.id.printHtml1);
+        htmlBtn2 = findViewById(R.id.printHtml2);
         message = findViewById(R.id.message);
         textBtn1.setOnClickListener(this);
         textBtn2.setOnClickListener(this);
@@ -57,18 +50,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         htmlBtn2.setOnClickListener(this);
         webView = (WebView) findViewById(R.id.wv_webview);
         webView.enableSlowWholeDocumentDraw();
-        threadPool = Executors.newSingleThreadExecutor();
         handler = new Handler(handleCallBack);
-        callBack = new HandleCallbackImpl(this, handler);
         mHandler = new Handler(Looper.getMainLooper()) {
             @Override
             public void handleMessage(Message msg) {
                 String message = (String) msg.obj;
-                message = lines + " lines of receipt， " + message;
-                callBack.sendResponse(HandleCallbackImpl.SUCCESS_CODE, message);
+                callBack.sendResponse(HandleCallBack.SUCCESS_CODE, message);
+                disableButtons(true);
             }
         };
-        ;
+        callBack = new HandleCallbackImpl(this, handler);
         printer = PrinterModel.getInstance(this);
         printer.setHandler(mHandler);
         showTicket("default.html");
@@ -76,30 +67,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        disableButtons(false);
         switch (v.getId()) {
             case R.id.printText1:
                 showTicket("receipt_60.txt");
-                lines = 60;
-                threadPool.execute(() -> printer.printTextSync(htmlContent));
+                printer.addTextTask(printer. new PrintTextTask(htmlContent));
                 break;
             case R.id.printText2:
                 showTicket("receipt_120.txt");
-                lines = 120;
-                threadPool.execute(() -> printer.printTextSync(htmlContent));
+                printer.addTextTask(printer. new PrintTextTask(htmlContent));
                 break;
             case R.id.printHtml1:
                 showTicket("receipt_60.html");
-                lines = 60;
                 printer.printHtmlAsync(htmlContent);
                 break;
             case R.id.printHtml2:
                 showTicket("receipt_120.html");
-                lines = 120;
                 printer.printHtmlAsync(htmlContent);
                 break;
             default:
                 break;
         }
+    }
+
+    private void disableButtons(boolean enable) {
+        textBtn1.setEnabled(enable);
+        textBtn2.setEnabled(enable);
+        htmlBtn1.setEnabled(enable);
+        htmlBtn2.setEnabled(enable);
     }
 
     public void showTicket(String filePath) {
@@ -115,7 +110,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onDestroy() {
         super.onDestroy();
         Log.e("ACTIVITY", "ACTIVITY DESTROYED! ");
+        if (printer!=null){
+            printer.shutdown();
+        }
     }
+
 
     private Handler.Callback handleCallBack = msg -> {
         switch (msg.what) {
