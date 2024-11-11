@@ -19,6 +19,10 @@ public class HtmlFileUtils {
             while ((line = bufferedReader.readLine()) != null) {
                 stringBuilder.append(line).append("\n");
             }
+            if (filePath.endsWith("txt")){
+                stringBuilder.append("").append("\n");
+                stringBuilder.append("").append("\n");
+            }
         } finally {
             if (inputStream != null) {
                 inputStream.close();
